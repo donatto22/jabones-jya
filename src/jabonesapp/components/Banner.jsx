@@ -7,7 +7,7 @@ import towels from '../../assets/towels.webp'
 
 export const Banner = () => {
     return (
-        <Box w='80%' m='0 auto' borderRadius='30px' mt='-2em' overflow='hidden'
+        <Box w='80%' m='0 auto' borderRadius='30px' mt='-6em' overflow='hidden'
             h='300px' transform='translate(0, 50%)' bgImage={towels} bgSize='cover' bgPosition='center'>
             {/* oscurecedor */}
             <VStack bgColor='rgba(0, 0, 0, .4)' h='100%' justifyContent='center' spacing='1.4em'>

@@ -22,34 +22,39 @@ export const Footer = () => {
         {/* se mostrará el banner si está en la página de inicio */}
         { banner && <Banner/> }
 
-        <Box bgColor='var(--dark-brown)' h='360px' display='flex' alignItems='end'>
+        <Box bgColor='var(--dark-brown)' h={ banner && '420px' } display='flex' alignItems='end'>
             {/* el contenedor que centra el footer */}
-            <HStack w='80%' m='0 auto' bgColor='violet'>
+            <HStack w='80%' m='0 auto' justifyContent='space-between' color='var(--white)'>
                 {/* el contenedor con el nombre y corto texto de la empresa */}
-                <VStack>
-                    <Text>Jabones JyA</Text>
+                <VStack ml='4em' align='start' maxWidth='300px'>
+                    <Text fontSize='24px' as='div' >Jabones JyA</Text>
+                    <Text color='var(--soap)' lineHeight='1.6'>
+                        Cuida tu piel de forma natural, sin químicos ni productos alterados.
+                    </Text>
                 </VStack>
-                <HStack>
+
+                <HStack mr='4em'>
                     <Box></Box>
 
-                    <HStack spacing={10}>
-                        <VStack align='start'>
+                    <HStack spacing='6em' p='4em 0'>
+                        <VStack align='start' spacing='2em'>
                             <Box fontSize='18px' fontWeight='bold'>Enlaces</Box>
 
-                            <VStack align='start'>
+                            <VStack align='start' spacing='1em' color='var(--soap)'>
                                 <Box>Inicio</Box>
                                 <Box>Catalogo</Box>
                                 <Box>Contacto</Box>
                             </VStack>
                         </VStack>
 
-                        <VStack align='start'>
-                            <Box fontSize='18px' fontWeight='bold'>Enlaces</Box>
+                        <VStack align='start' spacing='2em'>
+                            <Box fontSize='18px' fontWeight='bold'>Contacto</Box>
 
-                            <VStack align='start'>
-                                <Box>Inicio</Box>
-                                <Box>Catalogo</Box>
-                                <Box>Contacto</Box>
+                            <VStack align='start' spacing='1em' color='var(--soap)'>
+                                <Box>Email: jyasoap@gmail.com</Box>
+                                <Box>Dirección: direccion 123</Box>
+
+                                <Box>Teléfono: 987 654 321</Box>
                             </VStack>
                         </VStack>
                     </HStack>
