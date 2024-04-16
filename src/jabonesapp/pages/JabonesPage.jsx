@@ -1,12 +1,12 @@
 import { JabonesLayout } from "../layout/JabonesLayout"
-import { Header } from "../views"
-import { WhyChooseUs } from "../views"
+import { Header, TrendingProducts, WhyChooseUs } from "../views"
 
 const JabonesPage = () => {
     return (
         <>
             <JabonesLayout>
                 <Header />
+                <TrendingProducts/>
                 <WhyChooseUs />
             </JabonesLayout>
         </>
