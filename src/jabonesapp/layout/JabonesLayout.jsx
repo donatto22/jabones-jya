@@ -18,7 +18,6 @@ export const JabonesLayout = ({ children }) => {
         }
     }, [])
 
-
     return (
         <>
         <NavLinks positionAbsolute={ positionAbsolute } />
