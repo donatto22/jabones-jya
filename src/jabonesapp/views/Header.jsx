@@ -15,7 +15,6 @@ const variants = {
 export const Header = () => {
     return (
         <Box w='100dvw' h='100dvh'>
-            <NavLinks positionAbsolute={true}/>
             <Box overflow='hidden' w='100%' h='100%' bgImage={`url(${soapImage})`}
             bgRepeat='no-repeat' bgPosition='center' bgSize='cover'></Box>
 

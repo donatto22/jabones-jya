@@ -1,6 +1,10 @@
+import { JabonesLayout } from "../layout/JabonesLayout"
+
 const ContactUs = () => {
     return (
-        <div>ContactUs</div>
+        <JabonesLayout>
+            <div>ContactUs</div>
+        </JabonesLayout>
     )
 }
 

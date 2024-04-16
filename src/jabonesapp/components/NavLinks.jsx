@@ -24,11 +24,15 @@ export const NavLinks = ({ positionAbsolute = false }) => {
                 
                 <Box color='var(--white)'>
                     <HStack spacing={20}>
-                        <Box sx={{ ...linkHoverSx }} py='10px' cursor='pointer'>Inicio</Box>
-                        <Box sx={{ ...linkHoverSx }} py='10px' cursor='pointer'>Nosotros</Box>
+                        <Box sx={{ ...linkHoverSx }} py='10px' cursor='pointer'>
+                            <Link to='/'>Inicio</Link>
+                        </Box>
+
                         <Box sx={{ ...linkHoverSx }} py='10px' cursor='pointer'>
                             <Link to='/contact'>Contáctanos</Link>    
                         </Box>
+                        
+                        <Box sx={{ ...linkHoverSx }} py='10px' cursor='pointer'>Catálogo</Box>
                     </HStack>
                 </Box>
             </Box>

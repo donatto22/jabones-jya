@@ -1,4 +1,4 @@
-import { Box, Text, Button,HStack } from '@chakra-ui/react'
+import { Box, Text, Button, HStack } from '@chakra-ui/react'
 
 export const WhyChooseUs = () => {
     return (

@@ -1,11 +1,14 @@
+import { JabonesLayout } from "../layout/JabonesLayout"
 import { Header } from "../views"
-import { WhyChooseUs } from "../views/WhyChooseUs"
+import { WhyChooseUs } from "../views"
 
 const JabonesPage = () => {
     return (
         <>
-        <Header/>
-        <WhyChooseUs/>
+            <JabonesLayout>
+                <Header />
+                <WhyChooseUs />
+            </JabonesLayout>
         </>
         // <ReactFullpage
         // licenseKey='Non open source license'
