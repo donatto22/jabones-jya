@@ -1,11 +1,13 @@
-import { Box, Image, HStack } from '@chakra-ui/react'
-import LockerGLogo from '../../assets/lockerglogo.png'
-
-import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
-const PersonalizedLink = ({ hover, title, url, color }) => {
-    const linkColor = (color == 'white') ? 'var(--white)' : 'black'
+import { Box, Image, HStack } from '@chakra-ui/react'
+
+import LockerGLogo from '../../assets/lockerglogo.png'
+import { useTheme } from '../hooks/useTheme'
+
+const PersonalizedLink = ({ hover, title, url }) => {
+    const { linkColor } = useTheme()
 
     return (
         <Box sx={{ ...hover }} py='10px' cursor='pointer'>
@@ -24,13 +26,15 @@ PersonalizedLink.propTypes = {
 }
 
 export const NavLinks = ({ positionAbsolute = false }) => {
+    const { linkColor } = useTheme()
+
     const stylesAdditionals = positionAbsolute ? {
         position: 'absolute',
     } : ''
 
     const linkHoverSx = {
         '&:hover': {
-            boxShadow: '0 2px 0px var(--white)'
+            boxShadow: `0 2px 0px ${linkColor}`
         }
     }
 
