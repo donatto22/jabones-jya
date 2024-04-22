@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
-import { Box, Image, HStack } from '@chakra-ui/react'
+import { Box, Image, HStack, position } from '@chakra-ui/react'
 
 import LockerGLogo from '../../assets/lockerglogo.png'
 import { useTheme } from '../hooks/useTheme'
@@ -30,7 +30,7 @@ export const NavLinks = ({ positionAbsolute = false }) => {
 
     const stylesAdditionals = positionAbsolute ? {
         position: 'absolute',
-    } : ''
+    } : { position: 'relative' }
 
     const linkHoverSx = {
         '&:hover': {

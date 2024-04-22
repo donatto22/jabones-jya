@@ -13,8 +13,8 @@ const PersonalizedInput = ({ ...props }) => {
 const ContactUs = () => {
     return (
         <JabonesLayout>
-            <Box w='100%' h='80dvh' display='flex' justifyContent='center' flexDir='column' alignItems='flex-start'>
-                <VStack w='70%' m='0 auto'>
+            <Box w='100%' minHh='50dvh' display='flex' justifyContent='center' flexDir='column' alignItems='flex-start'>
+                <VStack w='70%' m='4em auto' gap='5em'>
                     <HStack justifyContent='space-between' boxShadow='0 2px 0 #ddd' pb='2em'>
                         <Box>
                             <Text fontSize='30px' m={0} width='fit-content' fontWeight='500'>Contacto</Text>
@@ -27,12 +27,14 @@ const ContactUs = () => {
 
                     </HStack>
 
-                    <HStack>
-                        {/* formulario */}
-                        <Box>. . .</Box>
+                    <Box bgColor='#f7f7f7' w='100%' borderRadius='30px'>
+                        <HStack padding='1em 2em'>
+                            {/* formulario */}
+                            <Box>. . .</Box>
 
-                        {/* cards de contacto */}
-                    </HStack>
+                            {/* cards de contacto */}
+                        </HStack>
+                    </Box>
                 </VStack>
                 <Box>
 
