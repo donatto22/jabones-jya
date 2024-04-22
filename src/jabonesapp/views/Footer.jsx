@@ -24,16 +24,16 @@ export const Footer = () => {
 
         <Box bgColor='var(--dark-brown)' h={ banner && '420px' } display='flex' alignItems='end'>
             {/* el contenedor que centra el footer */}
-            <HStack w='80%' m='0 auto' justifyContent='space-between' color='var(--white)'>
+            <HStack w='70%' m='0 auto' justifyContent='space-between' color='var(--white)'>
                 {/* el contenedor con el nombre y corto texto de la empresa */}
-                <VStack ml='4em' align='start' maxWidth='300px'>
+                <VStack  align='start' maxWidth='300px'>
                     <Text fontSize='24px' as='div' >Jabones JyA</Text>
                     <Text color='var(--soap)' lineHeight='1.6'>
                         Cuida tu piel de forma natural, sin químicos ni productos alterados.
                     </Text>
                 </VStack>
 
-                <HStack mr='4em'>
+                <HStack>
                     <Box></Box>
 
                     <HStack spacing='6em' p='4em 0'>
