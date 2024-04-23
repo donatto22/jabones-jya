@@ -22,7 +22,7 @@ export const Footer = () => {
         {/* se mostrará el banner si está en la página de inicio */}
         { banner && <Banner/> }
 
-        <Box bgColor='var(--dark-brown)' h={ banner && '420px' } alignItems='end'>
+        <Box bgColor='var(--dark-brown)' h={ banner && '420px' } display='flex' alignItems='end'>
             {/* el contenedor que centra el footer */}
             <HStack w='70%' m='0 auto' justifyContent='space-between' color='var(--white)'>
                 {/* el contenedor con el nombre y corto texto de la empresa */}
