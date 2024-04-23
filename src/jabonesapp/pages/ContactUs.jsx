@@ -1,20 +1,13 @@
-import { Box, Text,
-    FormControl,
-    FormLabel,
-    Input,
-    VStack,
-    HStack, } from "@chakra-ui/react"
+import { Box, Text, VStack, HStack } from "@chakra-ui/react"
 import { JabonesLayout } from "../layout/JabonesLayout"
-
-const PersonalizedInput = ({ ...props }) => {
-    return <Input { ...props } border='0' borderRadius='4px' mt='10px' p='.4em 0' textIndent={10}/>
-}
+import { ContactUsForm } from "../components/ContactUsForm"
+import { ContactUsSocialNetwork } from "../components/ContactUsSocialNetwork"
 
 const ContactUs = () => {
     return (
         <JabonesLayout>
             <Box w='100%' minHh='50dvh' display='flex' justifyContent='center' flexDir='column' alignItems='flex-start'>
-                <VStack w='70%' m='4em auto' gap='5em'>
+                <VStack w='70%' m='4em auto' gap='4em'>
                     <HStack justifyContent='space-between' boxShadow='0 2px 0 #ddd' pb='2em'>
                         <Box>
                             <Text fontSize='30px' m={0} width='fit-content' fontWeight='500'>Contacto</Text>
@@ -27,12 +20,13 @@ const ContactUs = () => {
 
                     </HStack>
 
-                    <Box bgColor='#f7f7f7' w='100%' borderRadius='30px'>
-                        <HStack padding='1em 2em'>
+                    <Box bgColor='#f7f7f7' w='100%' borderRadius='20px' height='100%'>
+                        <HStack padding='4em' spacing='5em' align='start'>
                             {/* formulario */}
-                            <Box>. . .</Box>
+                            <ContactUsForm />
 
                             {/* cards de contacto */}
+                            <ContactUsSocialNetwork />
                         </HStack>
                     </Box>
                 </VStack>

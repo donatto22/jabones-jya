@@ -1,5 +1,4 @@
 import { Box, Text, Button } from '@chakra-ui/react'
-import { NavLinks } from '../components'
 
 import { motion } from 'framer-motion'
 
