@@ -10,7 +10,7 @@ import LavandaSoapImage from '../../assets/lavanda_soap.jpg'
 const Products = () => {
     return (
         <JabonesLayout>
-            <Box width='70%' m='0 auto'>
+            <Box width='70%' m='4em auto'>
                 <Text fontSize='40px'>
                     Lo más solicitado
                 </Text>

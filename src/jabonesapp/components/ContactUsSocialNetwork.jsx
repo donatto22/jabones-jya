@@ -13,15 +13,15 @@ import {
 
 import PropTypes from 'prop-types'
 
-const SocialCard = ({ icons, content }) => {
+const SocialCard = ({ icons, iconsUrl, content }) => {
     return (
         <VStack border='2px solid #eee' borderRadius='10px'
         p='1em 0' spacing='1em' alignItems='center' justifyContent='center'>
             <HStack>
             {
-                typeof icons == 'object' ? (
-                    icons.map((icon) => 
-                        <Box key='' w='40px' height='40px' borderRadius='10px' 
+                icons ? (
+                    icons.map((icon, key) => 
+                        <Box key='' w='40px' height='40px' borderRadius='10px' onClick={ iconsUrl ? (() => window.open(`${iconsUrl[key]}`, '_blank')) : ''}
                         bgColor='#eee' display='flex' alignItems='center' justifyContent='center'>
                             { icon }
                         </Box>)
@@ -35,7 +35,7 @@ const SocialCard = ({ icons, content }) => {
 }
 
 SocialCard.propTypes = {
-    icons: PropTypes.object || PropTypes.string,
+    icons: PropTypes.object,
     content: PropTypes.string
 }
 
@@ -46,7 +46,13 @@ export const ContactUsSocialNetwork = () => {
             <SocialCard icons={ [<MailIcon />] } content='jyasoap@gmail.com'/>
             <SocialCard icons={ [<PhoneIcon />] } content='996 521 865'/>
             <SocialCard icons={ [<LocationIcon />] } content='Avenida Ejemplo 123'/>
-            <SocialCard icons={ [<FacebookIcon />, <TiktokIcon/>, <InstagramIcon/>] } content='Redes Sociales'/>
+
+            <SocialCard icons={ [<FacebookIcon />, <TiktokIcon/>, <InstagramIcon/>] } 
+            iconsUrl={[
+            'https://www.facebook.com/profile.php?id=61558296670877', 
+            'https://www.tiktok.com/@jya_jabones?_t=8lxyxsJU7NN&_r=1', 
+            'https://www.instagram.com/jya_jabones?igsh=MXBnajdqNTExaTRscQ==']}
+            content='Redes Sociales'/>
         </Stack>
     )
 }

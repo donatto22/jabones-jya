@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
-import { Box, Image, HStack, position } from '@chakra-ui/react'
+import { Box, Image, HStack, position, Divider, useBreakpointValue } from '@chakra-ui/react'
 
 import LockerGLogo from '../../assets/lockerglogo.png'
 import { useTheme } from '../hooks/useTheme'
@@ -42,14 +42,15 @@ export const NavLinks = ({ positionAbsolute = false }) => {
         <Box { ...stylesAdditionals } p='.6em 0' zIndex={1} w='100%'>
             <Box w='90%' m='0 auto'  display='flex' alignItems='center' justifyContent='space-between'>
                 <Box w='70px'>
-                    <Image src={LockerGLogo} loading='lazy' filter='drop-shadow(2px 2px 2px #000)'/>
+                    <Image src={LockerGLogo} loading='lazy' filter={ positionAbsolute ? 'drop-shadow(2px 2px 2px #000)': 'invert(1)' }/>
                 </Box>
                 
-                <Box color='var(--white)'>
+                <Box color='var(--white)' >
                     <HStack spacing={20}>
                         <PersonalizedLink hover={linkHoverSx} color='white' title='Inicio' url='/' />
+                        <PersonalizedLink hover={linkHoverSx} color='white' title='Nosotros' url='/about' />
+                        <PersonalizedLink hover={linkHoverSx} color='white' title='Productos' url='/products' />
                         <PersonalizedLink hover={linkHoverSx} color='white' title='Contáctanos' url='/contact' />
-                        <PersonalizedLink hover={linkHoverSx} color='white' title='Catálogo' url='/products' />
                     </HStack>
                 </Box>
             </Box>
