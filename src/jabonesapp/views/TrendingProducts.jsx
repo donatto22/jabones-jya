@@ -38,7 +38,7 @@ export const TrendingProducts = () => {
                     <Text fontSize='30px' m={0} fontWeight='500' lineHeight='1.6'>Nuestros productos en tendencia</Text>
                     <Text lineHeight='1.6'>Descubre nuestros productos más solicitados para el cuidado de la piel. Desde clásicos, exfoliantes hasta de frutas nativas. Estos jabones te ayudarán a mejorar lo que necesites.</Text>
 
-                    <PersonalizedButton />
+                    <PersonalizedButton text='Ver todos'/>
                 </VStack>
 
                 <HStack width='70%' justify='end' spacing='4em'>

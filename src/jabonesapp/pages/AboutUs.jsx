@@ -6,6 +6,7 @@ import WaveBottom from '../../assets/wave-bottom.svg'
 import MisionImg from '../../assets/mision.webp'
 import { PersonalizedButton } from "../components/atomic/PersonalizedButton"
 import { Values } from "../components/Values"
+import { Link } from "react-router-dom"
 
 const AboutUs = () => {
     return (
@@ -37,7 +38,9 @@ const AboutUs = () => {
                                 Sabemos lo importante que es para ti el cuidado de tu piel, es entonces que nuestra amplia investigación y experiencia lograron  crear el producto que hoy puedes tener.
                             </Text>
 
-                            <PersonalizedButton text='Contáctanos' shadow/>
+                            <Link to='/contact'>
+                                <PersonalizedButton text='Contáctanos' shadow/>
+                            </Link>
                         </Stack>
                     </Stack>
                 </Box>

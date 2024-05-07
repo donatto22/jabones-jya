@@ -34,8 +34,6 @@ export const Footer = () => {
                 </VStack>
 
                 <HStack>
-                    <Box></Box>
-
                     <HStack spacing='6em' p='4em 0'>
                         <VStack align='start' spacing='2em'>
                             <Box fontSize='18px' fontWeight='bold'>Enlaces</Box>

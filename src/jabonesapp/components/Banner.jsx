@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
 
-import { Box, Button, VStack } from '@chakra-ui/react'
-import { IoIosArrowDroprightCircle } from 'react-icons/io'
+import { Box, VStack } from '@chakra-ui/react'
 
 import towels from '../../assets/towels.webp'
+import { PersonalizedButton } from './atomic/PersonalizedButton'
 
 export const Banner = () => {
     return (
@@ -17,17 +17,7 @@ export const Banner = () => {
                 </Box>
 
                 <Link to='/products'>
-                    <Button cursor='pointer' display='flex' gap='6px' transition='all .2s'
-                        border='0' padding='.8em 1.4em' borderRadius='30px' bgColor='var(--soap)'
-                        sx={{
-                            '&:hover': {
-                                bgColor: 'var(--brown)',
-                                color: 'var(--white)'
-                            }
-                        }}>
-                        Cuida tu piel
-                        <IoIosArrowDroprightCircle size='20px' />
-                    </Button>
+                    <PersonalizedButton text='Cuida tu piel' />
                 </Link>
             </VStack>
         </Box>

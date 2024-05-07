@@ -13,7 +13,7 @@ const CardValue = ({ title, description, aosDuration }) => {
 
 export const Values = () => {
   return (
-    <Stack direction='row' justifyContent='space-evenly' flexWrap='wrap'>
+    <Stack direction='row' justifyContent='space-evenly' flexWrap='wrap' gap='4em'>
         <CardValue aosDuration='1300' title='Transpariencia' description='Ser abiertos con ustedes desde cualquier parte'/>
         <CardValue aosDuration='1400' title='Calidad' description='Darle a ustedes lo que su piel necesita es primero'/>
         <CardValue aosDuration='1500' title='Confianza' description='Tu piel sexy sabe que jabón debe escoger' />

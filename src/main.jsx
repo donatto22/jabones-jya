@@ -7,6 +7,6 @@ import './libcss/styles.config.css'
 
 createRoot(document.getElementById('root')).render(
     <BrowserRouter>
-        <JabonesApp />
+            <JabonesApp />
     </BrowserRouter>
 )
