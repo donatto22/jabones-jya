@@ -1,11 +1,11 @@
-import { Box, Text, HStack, VStack, Image, Button } from '@chakra-ui/react'
+import { Box, Text, HStack, VStack } from '@chakra-ui/react'
 
 import StarRatings from 'react-star-ratings'
 
 // imagenes
 import GlicerineSoap from '../../assets/glicerine_soap.png'
 import Exfoliante from '../../assets/exfoliante_de_canela.jpg'
-import { IoIosArrowDroprightCircle } from 'react-icons/io'
+import { PersonalizedButton } from '../components/atomic/PersonalizedButton'
 
 const ProductCard = ({ imageUrl, productTitle, productDescription, price }) => {
     return (
@@ -38,17 +38,7 @@ export const TrendingProducts = () => {
                     <Text fontSize='30px' m={0} fontWeight='500' lineHeight='1.6'>Nuestros productos en tendencia</Text>
                     <Text lineHeight='1.6'>Descubre nuestros productos más solicitados para el cuidado de la piel. Desde clásicos, exfoliantes hasta de frutas nativas. Estos jabones te ayudarán a mejorar lo que necesites.</Text>
 
-                    <Button cursor='pointer' display='flex' gap='6px' transition='all .2s'
-                        border='0' padding='.8em 1.4em' borderRadius='30px' bgColor='var(--soap)'
-                        sx={{
-                            '&:hover': {
-                                bgColor: 'var(--brown)',
-                                color: 'var(--white)'
-                            }
-                        }}>
-                        Ver todos
-                        <IoIosArrowDroprightCircle size='20px' />
-                    </Button>
+                    <PersonalizedButton />
                 </VStack>
 
                 <HStack width='70%' justify='end' spacing='4em'>
