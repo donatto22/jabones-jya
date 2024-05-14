@@ -7,7 +7,7 @@ const QrCode = () => {
 
     return (
         <QRCodeSVG fgColor='var(--dark-brown)' width='100%'
-        value={`https://jabones-jya.vercel.app/${path}`} bgColor="transparent" />
+        value={`https://jabones-jya.vercel.app${path}`} bgColor="transparent" />
     )
 }
 
