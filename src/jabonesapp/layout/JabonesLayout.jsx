@@ -5,6 +5,7 @@ import { useLocation } from "react-router-dom"
 
 import { NavLinks } from "../components"
 import { Footer } from "../views/Footer"
+import { QrBubble } from "../components/QrBubble"
 
 export const JabonesLayout = ({ children }) => {
     const location = useLocation()
@@ -20,8 +21,11 @@ export const JabonesLayout = ({ children }) => {
 
     return (
         <>
+
         <NavLinks positionAbsolute={ positionAbsolute } />
             { children }
+
+            <QrBubble/>
         <Footer />
         </>
     )
