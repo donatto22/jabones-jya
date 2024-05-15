@@ -36,7 +36,7 @@ export const WhyChooseUs = () => {
                 <VStack w='40%' align='start'>
                     <Text fontSize='40px' fontWeight='500' as='div'>Porqué escogernos?</Text>
                     <Text lineHeight='1.8' w='80%'>
-                        Con más de 4000+ reseñas y hemos logrado cambiar la vida y piel de nuestros compradores. 
+                    Nuestros jabones ofrecen diferentes beneficios desde tratado de la picazón, manchas, acné, piel seca y demás. 
                     </Text>
 
                     <VStack spacing='1em' align='start'>
