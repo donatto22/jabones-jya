@@ -8,10 +8,12 @@ import GlicerineSoap from '../../assets/glicerine_soap.png'
 import AvenaCoco from '../../assets/avena_coco.webp'
 import MielManzanilla from '../../assets/miel_manzanilla.webp'
 
-const ProductCard = ({ imageUrl, productTitle, productDescription, price }) => {
+const ProductCard = ({ imageUrl, productTitle, productDescription, price, aosDuration }) => {
     return (
-        <VStack align='start' w='240px'>
-            <Box borderRadius='20px' overflow='hidden' w='240px' h='240px'
+        <VStack data-aos="fade-left" data-aos-duration={aosDuration}
+        align='start' w='280px' boxShadow='0 0 20px var(--soap)'
+        padding='1.4em' borderRadius='calc(20px + 1em/2)'>
+            <Box borderRadius='20px' overflow='hidden' w='280px' h='240px'
             bgImage={imageUrl} bgSize='cover' bgPos='center'
             >
                 {/* <Image src={imageUrl} width='240px' alt={productTitle} loading='lazy' /> */}
@@ -44,16 +46,19 @@ export const TrendingProducts = () => {
 
                 <HStack width='70%' justify='end' spacing='4em'>
                     <ProductCard price='12'
+                    aosDuration='1200'
                     imageUrl={GlicerineSoap}
                     productTitle='Jabón de Glicerina'
                     productDescription='Perfecto para la piel seca y para tratar el picor.' />
                     
                     <ProductCard price='12'
+                    aosDuration='1400'
                     imageUrl={AvenaCoco}
                     productTitle='Avena y Coco'
                     productDescription='Excelente humectante de piel además de evitar piel graso.' />
                     
                     <ProductCard price='15'
+                    aosDuration='1400'
                     imageUrl={MielManzanilla}
                     productTitle='Miel y manzanilla'
                     productDescription='Indicado para piel delicada, sensible o rosácea.' />
