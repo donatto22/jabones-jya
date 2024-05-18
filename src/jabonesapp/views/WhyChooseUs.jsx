@@ -25,12 +25,12 @@ ItemList.propTypes = {
 
 export const WhyChooseUs = () => {
     return (
-        <Box minHeight='100dvh' display='flex' justifyContent='center'>
+        <Box display='flex' justifyContent='center'  padding='2em 0 6em'>
             <HStack spacing='10em' justifyContent='center'>
                 {/* imagenes */}
                 <HStack position='relative'>
-                    <Image loading='lazy' src={girl} w='300px' borderRadius='20px'/>
-                    <Image loading='lazy' src={soaps} w='200px' borderRadius='20px' position='absolute' right='-100' bottom='-50'/>
+                    <Image loading='lazy' src={girl} w='300px' borderRadius='20px' boxShadow='0 20px 100px -40px var(--dark-brown)' />
+                    <Image loading='lazy' src={soaps} w='200px' borderRadius='20px' boxShadow='0 20px 100px -40px var(--dark-brown)' position='absolute' right='-100' bottom='-50'/>
                 </HStack>
 
                 <VStack w='40%' align='start'>
