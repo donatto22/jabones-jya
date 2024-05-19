@@ -15,7 +15,7 @@ import PropTypes from 'prop-types'
 
 const SocialCard = ({ icons, iconsUrl, content }) => {
     return (
-        <VStack border='2px solid #eee' borderRadius='10px'
+        <VStack border='2px solid #eee' borderRadius='10px' cursor={ iconsUrl ? 'pointer' : 'default'}
         p='1em 0' spacing='1em' alignItems='center' justifyContent='center'>
             <HStack>
             {

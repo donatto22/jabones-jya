@@ -4,7 +4,7 @@ import { JabonesLayout } from "../layout/JabonesLayout"
 import { CardProduct } from '../components/CardProduct'
 
 // imagenes
-import GlicerineSoapImage from '../../assets/glicerine_soap.png'
+import JabonCoco from '../../assets/jabon_coco.jpg'
 import LavandaSoapImage from '../../assets/lavanda_soap.jpg'
  
 const Products = () => {
@@ -15,7 +15,7 @@ const Products = () => {
                     Lo más solicitado
                 </Text>
                 <Stack direction='row' gap='4em'>
-                    <CardProduct price='12' image={GlicerineSoapImage} tooltipLabel='Jabón de glicerina' />
+                    <CardProduct price='12' image={JabonCoco} tooltipLabel='Jabón de coco' />
                     <CardProduct price='13' image={LavandaSoapImage} tooltipLabel='Jabón de lavanda'/>
                 </Stack>
             </Box>

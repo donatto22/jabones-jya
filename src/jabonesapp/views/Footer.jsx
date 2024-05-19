@@ -49,7 +49,7 @@ export const Footer = () => {
                             <Box fontSize='18px' fontWeight='bold'>Contacto</Box>
 
                             <VStack align='start' spacing='1em' color='var(--soap)'>
-                                <Box>Email: jyasoap@gmail.com</Box>
+                                <Box>Email: jyajabones@gmail.com</Box>
                                 <Box>Dirección: direccion 123</Box>
 
                                 <Box>Teléfono: 996 521 865</Box>
