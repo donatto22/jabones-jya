@@ -21,7 +21,7 @@ export const Header = () => {
                 display='flex' flexDir='column'  justifyContent='center' alignItems='center'>
                     <motion.div variants={variants} initial='hidden' animate='enter' transition={{ type: "linear", duration: 1.2 }}>
                         <Text fontWeight='bold' fontSize='60px' color='var(--soap)' m='0 auto' width='60%' textAlign='center' letterSpacing={3} mb='.6em'>
-                            Cuida tu piel de forma natural y sé suave
+                            Cuida tu piel de forma natural y se suave
                         </Text>
                     </motion.div>
 

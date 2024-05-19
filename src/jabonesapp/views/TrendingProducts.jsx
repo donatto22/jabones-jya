@@ -4,16 +4,16 @@ import StarRatings from 'react-star-ratings'
 import { PersonalizedButton } from '../components/atomic/PersonalizedButton'
 
 // imagenes
-import GlicerineSoap from '../../assets/glicerine_soap.png'
+import JabonCoco from '../../assets/jabon_coco.jpg'
 import AvenaCoco from '../../assets/avena_coco.webp'
 import MielManzanilla from '../../assets/miel_manzanilla.webp'
 
 const ProductCard = ({ imageUrl, productTitle, productDescription, price, aosDuration }) => {
     return (
         <VStack data-aos="fade-left" data-aos-duration={aosDuration}
-        align='start' w='280px' boxShadow='0 0 20px var(--soap)'
+        align='start' w='200px' boxShadow='0 0 20px -10px var(--soap)'
         padding='1.4em' borderRadius='calc(20px + 1em/2)'>
-            <Box borderRadius='20px' overflow='hidden' w='280px' h='240px'
+            <Box borderRadius='20px' overflow='hidden' w='200px' h='160px'
             bgImage={imageUrl} bgSize='cover' bgPos='center'
             >
                 {/* <Image src={imageUrl} width='240px' alt={productTitle} loading='lazy' /> */}
@@ -47,9 +47,9 @@ export const TrendingProducts = () => {
                 <HStack width='70%' justify='end' spacing='4em'>
                     <ProductCard price='12'
                     aosDuration='1200'
-                    imageUrl={GlicerineSoap}
-                    productTitle='Jabón de Glicerina'
-                    productDescription='Perfecto para la piel seca y para tratar el picor.' />
+                    imageUrl={JabonCoco}
+                    productTitle='Jabón de coco'
+                    productDescription='Perfecto para tratar hipersensibilidad e irritación' />
                     
                     <ProductCard price='12'
                     aosDuration='1400'
