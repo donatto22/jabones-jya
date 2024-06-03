@@ -6,7 +6,7 @@ import { ContactUsSocialNetwork } from "../components/ContactUsSocialNetwork"
 const ContactUs = () => {
     return (
         <JabonesLayout>
-            <Box w='100%' minHh='50dvh' display='flex' justifyContent='center' flexDir='column' alignItems='flex-start'>
+            <Box w='100%' minH='50dvh' display='flex' justifyContent='center' flexDir='column' alignItems='flex-start'>
                 <VStack w='70%' m='4em auto' gap='4em'>
                     <HStack justifyContent='space-between' boxShadow='0 2px 0 #ddd' pb='2em'>
                         <Box>

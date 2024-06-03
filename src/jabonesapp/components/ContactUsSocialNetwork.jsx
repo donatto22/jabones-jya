@@ -21,7 +21,7 @@ const SocialCard = ({ icons, iconsUrl, content }) => {
             {
                 icons ? (
                     icons.map((icon, key) => 
-                        <Box key='' w='40px' height='40px' borderRadius='10px' onClick={ iconsUrl ? (() => window.open(`${iconsUrl[key]}`, '_blank')) : ''}
+                        <Box key='' w='40px' height='40px' borderRadius='10px' onClick={ iconsUrl ? (() => window.open(`${iconsUrl[key]}`, '_blank')) : null}
                         bgColor='#eee' display='flex' alignItems='center' justifyContent='center'>
                             { icon }
                         </Box>)
@@ -35,7 +35,7 @@ const SocialCard = ({ icons, iconsUrl, content }) => {
 }
 
 SocialCard.propTypes = {
-    icons: PropTypes.object,
+    icons: PropTypes.array,
     content: PropTypes.string
 }
 
