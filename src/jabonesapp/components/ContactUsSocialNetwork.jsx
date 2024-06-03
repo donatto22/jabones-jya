@@ -44,7 +44,7 @@ export const ContactUsSocialNetwork = () => {
     return (
         <Stack direction='column' width='30%' spacing='3em'>
             <SocialCard icons={ [<MailIcon />] } content='jyasoap@gmail.com'/>
-            <SocialCard icons={ [<PhoneIcon />] } content='996 521 865'/>
+            <SocialCard icons={ [<PhoneIcon />] } iconsUrl={['https://api.whatsapp.com/send?phone=51996521865']} content='996 521 865'/>
             <SocialCard icons={ [<LocationIcon />] } content='Avenida Ejemplo 123'/>
 
             <SocialCard icons={ [<FacebookIcon />, <TiktokIcon/>, <InstagramIcon/>] } 
