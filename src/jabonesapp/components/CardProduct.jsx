@@ -3,26 +3,26 @@ import { FaShoppingBag } from "react-icons/fa"
 
 import PropTypes  from 'prop-types'
 
-export const CardProduct = ({ image, price, tooltipLabel }) => {
-    const sendWhatsapp = ({ price, tooltipLabel }) => {
+export const CardProduct = ({ image, tooltipLabel }) => {
+    const sendWhatsapp = ({ tooltipLabel }) => {
         const phone = '+51996521865'
 
-        const url = `https://wa.me/${phone}?text=Hola! Me gustaría más información acerca del ${tooltipLabel} de precio S/. ${price}`
+        const url = `https://wa.me/${phone}?text=Hola! Me gustaría más información acerca del ${tooltipLabel} de precio S/. 8`
         window.open(url, '_blank')
     }
 
     return (
         <VStack bgImage={ image } bgPosition='center' bgSize='cover'
-        bgRepeat='no-repeat' width='50%'
+        bgRepeat='no-repeat' width='30%'
         bgColor='red' borderRadius='40px' height='500px'
         justifyContent='space-between' alignItems='end'>
             <Box color='var(--soap)' bgColor='var(--brown)' p='1em 1.6em'
-            borderRadius='0 40px' fontSize='20px'> S/. { price || '10' }</Box>
+            borderRadius='0 40px' fontSize='20px'> S/. 8</Box>
 
             <Tooltip label={tooltipLabel} bgColor='rgba(0, 0, 0, .4)' p='10px 20px' color='var(--white)' borderRadius='20px' placement="top">
                 <Button cursor='pointer' p='.8em 0' m='0 auto 1em' leftIcon={<FaShoppingBag/>} 
                 width='90%' bgColor='rgba(0, 0, 0, .8)' borderRadius='40px'
-                color='var(--white)' border='0' onClick={() => sendWhatsapp({ price, tooltipLabel })}
+                color='var(--white)' border='0' onClick={() => sendWhatsapp({ tooltipLabel })}
                 sx={{
                     '&:hover': {
                         bgColor: 'rgba(0, 0, 0, .9)'

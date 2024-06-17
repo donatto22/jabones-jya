@@ -5,7 +5,8 @@ import { CardProduct } from '../components/CardProduct'
 
 // imagenes
 import JabonCoco from '../../assets/jabon_coco.jpg'
-import LavandaSoapImage from '../../assets/lavanda_soap.jpg'
+import JabonAvenaCoco from '../../assets/jabon_avena_coco.jpeg'
+import JabonMielManzanilla from '../../assets/jabon_avena_manzanilla.jpeg'
  
 const Products = () => {
     return (
@@ -15,8 +16,9 @@ const Products = () => {
                     Lo más solicitado
                 </Text>
                 <Stack direction='row' gap='4em'>
-                    <CardProduct price='12' image={JabonCoco} tooltipLabel='Jabón de coco' />
-                    <CardProduct price='13' image={LavandaSoapImage} tooltipLabel='Jabón de lavanda'/>
+                    <CardProduct image={JabonCoco} tooltipLabel='Jabón de coco' />
+                    <CardProduct image={JabonAvenaCoco} tooltipLabel='Jabón de Avena y Coco'/>
+                    <CardProduct image={JabonMielManzanilla} tooltipLabel='Jabón de Avena y Manzanilla'/>
                 </Stack>
             </Box>
         </JabonesLayout>
