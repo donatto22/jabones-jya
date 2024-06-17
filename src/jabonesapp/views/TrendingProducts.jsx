@@ -5,15 +5,15 @@ import { PersonalizedButton } from '../components/atomic/PersonalizedButton'
 
 // imagenes
 import JabonCoco from '../../assets/jabon_coco.jpg'
-import AvenaCoco from '../../assets/avena_coco.webp'
-import MielManzanilla from '../../assets/miel_manzanilla.webp'
+import AvenaCoco from '../../assets/jabon_avena_coco.jpeg'
+import MielManzanilla from '../../assets/jabon_avena_manzanilla.jpeg'
 
-const ProductCard = ({ imageUrl, productTitle, productDescription, price, aosDuration }) => {
+const ProductCard = ({ imageUrl, productTitle, productDescription, aosDuration }) => {
     return (
         <VStack data-aos="fade-left" data-aos-duration={aosDuration}
-        align='start' w='200px' boxShadow='0 0 20px -10px var(--soap)'
-        padding='1.4em' borderRadius='calc(20px + 1em/2)'>
-            <Box borderRadius='20px' overflow='hidden' w='200px' h='160px'
+        align='start' w='240px' boxShadow='0 0 20px -16px var(--brown)'
+        padding='1.4em' borderRadius='calc(10px + 1em/2)'>
+            <Box borderRadius='10px' overflow='hidden' w='240px' h='160px'
             bgImage={imageUrl} bgSize='cover' bgPos='center'
             >
                 {/* <Image src={imageUrl} width='240px' alt={productTitle} loading='lazy' /> */}
@@ -26,7 +26,7 @@ const ProductCard = ({ imageUrl, productTitle, productDescription, price, aosDur
             </VStack>
 
             <Box fontSize='20px' fontWeight='bold'>
-                S/. {price}
+                S/. 8
             </Box>
         </VStack>
     )
@@ -44,23 +44,23 @@ export const TrendingProducts = () => {
                     <PersonalizedButton text='Ver todos'/>
                 </VStack>
 
-                <HStack width='70%' justify='end' spacing='4em'>
-                    <ProductCard price='12'
+                <HStack width='70%' justify='end' spacing='3em'>
+                    <ProductCard
                     aosDuration='1200'
                     imageUrl={JabonCoco}
                     productTitle='Jabón de coco'
                     productDescription='Perfecto para tratar hipersensibilidad e irritación' />
                     
-                    <ProductCard price='12'
+                    <ProductCard
                     aosDuration='1400'
                     imageUrl={AvenaCoco}
                     productTitle='Avena y Coco'
                     productDescription='Excelente humectante de piel además de evitar piel graso.' />
                     
-                    <ProductCard price='15'
+                    <ProductCard
                     aosDuration='1400'
                     imageUrl={MielManzanilla}
-                    productTitle='Miel y manzanilla'
+                    productTitle='Avena y manzanilla'
                     productDescription='Indicado para piel delicada, sensible o rosácea.' />
                     
                 </HStack>
