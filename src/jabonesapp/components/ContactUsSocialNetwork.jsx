@@ -49,7 +49,7 @@ export const ContactUsSocialNetwork = () => {
 
             <SocialCard icons={ [<FacebookIcon />, <TiktokIcon/>, <InstagramIcon/>] } 
             iconsUrl={[
-            'https://www.facebook.com/profile.php?id=61558296670877', 
+            'https://www.facebook.com/profile.php?id=61560916891198', 
             'https://www.tiktok.com/@jya_jabones?_t=8lxyxsJU7NN&_r=1', 
             'https://www.instagram.com/jya_jabones?igsh=MXBnajdqNTExaTRscQ==']}
             content='Redes Sociales'/>
