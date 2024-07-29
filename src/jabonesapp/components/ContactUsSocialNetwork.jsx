@@ -50,8 +50,8 @@ export const ContactUsSocialNetwork = () => {
             <SocialCard icons={ [<FacebookIcon />, <TiktokIcon/>, <InstagramIcon/>] } 
             iconsUrl={[
             'https://www.facebook.com/profile.php?id=61560916891198', 
-            'https://www.tiktok.com/@jya_jabones?_t=8lxyxsJU7NN&_r=1', 
-            'https://www.instagram.com/jya_jabones?igsh=MXBnajdqNTExaTRscQ==']}
+            'https://www.tiktok.com/@jyajabonesartesan?_t=8oPl8LRNxkT&_r=1', 
+            'https://www.instagram.com/jya.328?igsh=MTFiNXFrNDd3amdiNA==']}
             content='Redes Sociales'/>
         </Stack>
     )
